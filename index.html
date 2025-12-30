@@ -251,39 +251,98 @@
         </div>
     </section>
 
-    <!-- Seção Portfolio (Clientes Antigos) -->
+    <!-- Seção Portfolio (Carrossel) -->
     <section id="portfolio" class="py-20 px-4 max-w-6xl mx-auto">
         <div class="text-center mb-16">
             <h2 class="text-4xl font-bold mb-4">Transformações</h2>
             <p class="text-stone-600">Confira alguns dos resultados realizados em nosso Studio.</p>
         </div>
 
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Cliente 1 -->
-            <div class="group relative overflow-hidden rounded-xl h-80 shadow-md">
-                <img src="imgs/Cliente1.png" 
-                     class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Transformação da cliente 1" loading="lazy">
-                <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
-                    <span class="text-white font-medium">Cliente 1</span>
+        <!-- Carrossel Container -->
+        <div class="carousel-wrapper relative">
+            <!-- Botão Esquerdo -->
+            <button id="carousel-prev" class="carousel-btn carousel-btn-prev absolute left-0 top-1/2 transform -translate-y-1/2 z-30 bg-stone-900/70 hover:bg-stone-900 text-white p-2 rounded-full transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+
+            <!-- Carrossel de Imagens -->
+            <div class="carousel-container overflow-hidden rounded-xl mx-12">
+                <div class="carousel-track flex transition-transform duration-500 ease-out">
+                    <!-- Cliente 0 -->
+                    <div class="carousel-slide flex-shrink-0 w-full">
+                        <div class="group relative overflow-hidden rounded-xl h-96 shadow-md">
+                            <img src="imgs/Cliente0.png" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Transformação da Cliente 0" loading="lazy">
+                            <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
+                                <span class="text-white font-medium text-lg">Cliente 0</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cliente 2 -->
+                    <div class="carousel-slide flex-shrink-0 w-full">
+                        <div class="group relative overflow-hidden rounded-xl h-96 shadow-md">
+                            <img src="imgs/Cliente2.png" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Transformação da Cliente 2" loading="lazy">
+                            <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
+                                <span class="text-white font-medium text-lg">Cliente 2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cliente 3 -->
+                    <div class="carousel-slide flex-shrink-0 w-full">
+                        <div class="group relative overflow-hidden rounded-xl h-96 shadow-md">
+                            <img src="imgs/Cliente3.png" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Transformação da Cliente 3" loading="lazy">
+                            <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
+                                <span class="text-white font-medium text-lg">Cliente 3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cliente 4 -->
+                    <div class="carousel-slide flex-shrink-0 w-full">
+                        <div class="group relative overflow-hidden rounded-xl h-96 shadow-md">
+                            <img src="imgs/Cliente4.png" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Transformação da Cliente 4" loading="lazy">
+                            <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
+                                <span class="text-white font-medium text-lg">Cliente 4</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cliente 5 -->
+                    <div class="carousel-slide flex-shrink-0 w-full">
+                        <div class="group relative overflow-hidden rounded-xl h-96 shadow-md">
+                            <img src="imgs/Cliente5.png" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Transformação da Cliente 5" loading="lazy">
+                            <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
+                                <span class="text-white font-medium text-lg">Cliente 5</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Cliente 6 -->
+                    <div class="carousel-slide flex-shrink-0 w-full">
+                        <div class="group relative overflow-hidden rounded-xl h-96 shadow-md">
+                            <img src="imgs/Cliente6.png" 
+                                 class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Transformação da Cliente 6" loading="lazy">
+                            <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
+                                <span class="text-white font-medium text-lg">Cliente 6</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <!-- Cliente 2 -->
-            <div class="group relative overflow-hidden rounded-xl h-80 shadow-md">
-                <img src="imgs/Cliente2.png" 
-                     class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Transformação da cliente 2" loading="lazy">
-                <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
-                    <span class="text-white font-medium">Cliente 2</span>
-                </div>
-            </div>
-            <!-- Cliente 3 -->
-            <div class="group relative overflow-hidden rounded-xl h-80 shadow-md">
-                <img src="imgs/Cliente3.png" 
-                     class="w-full h-full object-cover transform group-hover:scale-110 transition duration-500" alt="Transformação da cliente 3" loading="lazy">
-                <div class="absolute inset-0 bg-black/40 flex items-end p-6 opacity-0 group-hover:opacity-100 transition">
-                    <span class="text-white font-medium">Cliente 3</span>
-                </div>
-            </div>
+
+            <!-- Botão Direito -->
+            <button id="carousel-next" class="carousel-btn carousel-btn-next absolute right-0 top-1/2 transform -translate-y-1/2 z-30 bg-stone-900/70 hover:bg-stone-900 text-white p-2 rounded-full transition">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
         </div>
+
+        <!-- Indicadores -->
+        <div class="flex justify-center gap-2 mt-8" id="carousel-indicators"></div>
     </section>
 
     <!-- Footer / Contato -->
